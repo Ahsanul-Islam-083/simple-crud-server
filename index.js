@@ -62,7 +62,7 @@ const run = async () => {
                 $set: {
                     name: modifiedUser.name,
                     email: modifiedUser.email,
-                    role: modifiedUser.email,
+                    role: modifiedUser.role,
                 }
             }
             const result = await userCollection.updateOne(filter,updatedDocument);
